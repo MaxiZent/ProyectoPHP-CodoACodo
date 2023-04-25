@@ -1,0 +1,16 @@
+
+
+.nav-item {
+    margin: 0.8rem;
+    transition: .5s;
+}
+
+.nav-item a:hover {
+    color: orange;
+}
+
+#seccionContacto {
+    background-image: url(../img/ba2.jpg);
+    background-size: cover;
+    color: white;
+}

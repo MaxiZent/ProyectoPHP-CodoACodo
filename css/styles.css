@@ -1,4 +1,6 @@
-.carousel-inner {
+.carousel-caption {
+    justify-content: flex-start;
+    text-align: end;
 }
 
 .nav-item {

@@ -1,13 +1,60 @@
-.carousel-caption {
-    justify-content: flex-start;
-    text-align: end;
+.sectionConferencia {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/ba1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
 }
 
-.nav-item {
-    margin: 0.8rem;
-    transition: .5s;
+.sectionConferenciaBox {
+    height: 80vh;
 }
 
-.nav-item a:hover {
-    color: orange;
+.heroText {
+    position: absolute;
+    bottom: 2rem;
+    height: 70%;
+    width: 50%;
+}
+
+.heroText h1 {
+    font-weight: 600;
+    color: white;
+}
+
+.logo {
+    display: inline;
+    width: 8rem;
+}
+
+.logo img {
+    width: 8rem;
+}
+
+.ubicacion .row {
+    --bs-gutter-x: 0rem;
+}
+
+.badge {
+    border: 1px solid black;
+}
+
+.btn {
+    transform: skewX(-10deg);
+    border-radius: 0;
+}
+
+
+
+.nav-link {
+    font-size: .9rem;
+}
+
+.nav-link:hover {
+    color: rgb(253, 211, 6);
+}
+
+.copy p {
+    font-size: 0.9rem;
+    color: #fff;
 }

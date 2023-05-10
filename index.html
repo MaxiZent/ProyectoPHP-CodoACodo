@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="./img/codoacodo.png">
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,14 +14,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
-
     <!-- Mis estilos -->
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Real Seat</title>
+    <title>Conf Bs-As / Codo a Codo</title>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-scrollSpy" data-bs-smooth-scroll="true" tabindex="0">
-
     <header class="mb-5">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar-scrollSpy" data-bs-theme="dark">
             <div class="container">
@@ -35,7 +34,7 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav text-center">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#seccion-conferencia">La
+                            <a class="nav-link active" aria-current="page" href="#seccion-conferencia">La
                                 conferencia</a>
                         </li>
                         <li class="nav-item">
@@ -75,118 +74,22 @@
                             <span class="d-block fw-bold fs-5 p-1">¡Te esperamos!</span>
                         </p>
                         <div class="d-flex flex-column flex-lg-row">
-                            <a href="#inscripcionForm" class="btn btn-outline-success text-white mb-3">QUIERO SER
+                            <a href="#" class="btn-orador btn btn-outline-light mb-3">QUIERO SER
                                 ORADOR</a>
-                            <a href="" class="text-success btn btn-outline-success text-white mb-3 mx-2"
-                                data-bs-toggle="modal" data-bs-target="#buyTickesModal">COMPRAR TICKETS</a>
+                            <a href="#" class="btn btn-comprar mb-3 mx-2">COMPRAR TICKETS</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <!--<header>
-        <div class="d-flex flex-column justify-content-between">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary w-100 p-0 bg-dark bg-gradient"id="navbar-scrollSpy">
-                <div class="container">
-                    <a class="navbar-brand text-success fs-2" href="#">
-                        <img src="./img/codoacodo.png" alt="Logo" width="200" height="100"
-                            class="d-inline-block align-text-center">
-                        Conf Bs-As
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav ">
-                            <li class="nav-item ">
-                                <a class="nav-link text-white link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                    href="#">La Conferencia</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                    href="#">Los oradores</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                    href="#">Ubicacion</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                    href="#">Conviertete en orador</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-success btn btn-outline-success text-white" href="#">Comprar
-                                    Tickets</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/ba1.jpg" class="d-block" style="width: 100%;" alt="imagen obelisco">
-                    <div class="carousel-caption">
-                        <h3>Confs Bs-As</h3>
-                        <p>Llega por primerea vez a Argentina.Un eveneto para compartir con nuestra comunidad el
-                            conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Ven a
-                            conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer
-                            nivel que tenemos para ti. Te Esperamos!</p>
-                        <a href="#" class="btn btn-outline-success text-white">Conoce Mas</a>
-                        <a class="text-success btn bg-success text-white" href="#">Comprar
-                            Tickets</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/ba2.jpg" class="d-block" style="width:100%" alt="...">
-                    <div class="carousel-caption">
-                        <h3>Confs Bs-As</h3>
-                        <p>Llega por primerea vez a Argentina.Un eveneto para compartir con nuestra comunidad el
-                            conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Ven a
-                            conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer
-                            nivel que tenemos para ti</p>
-                        <a href="#" class="btn btn-outline-success text-white">Conoce Mas</a>
-                        <a class="text-success btn bg-success text-white" href="#">Comprar
-                            Tickets</a>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/ba3.jpg" class="d-block" style="width:100%" alt="...">
-                    <div class="carousel-caption">
-                        <h3>Confs Bs-As</h3>
-                        <p>Llega por primerea vez a Argentina.Un eveneto para compartir con nuestra comunidad el
-                            conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Ven a
-                            conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer
-                            nivel que tenemos para ti</p>
-                        <a href="#" class="btn btn-outline-success text-white">Conoce Mas</a>
-                        <a class="text-success btn bg-success text-white" href="#">Comprar
-                            Tickets</a>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div> -->
-    </header>
 
     <main>
         <section class="mb-5">
             <a name="seccion-oradores"></a>
             <div class="container">
-                <h1 class="text-center">CONOCÉ A LOS ORADORES</h1>
-                <div class="row align-content-center g-4 py-5 shadow p-5">
+                <h2 class="text-center">CONOCÉ A LOS ORADORES</h2>
+                <div class="row align-content-center g-4 py-5">
                     <div class="col-sm-6 col-md-6 col-lg-4">
                         <div class="card">
                             <img class="card-img-top" src="./img/steve.jpg" alt="Card image">
@@ -195,7 +98,7 @@
                                     <span class="badge text-bg-warning">JavaScript</span>
                                     <span class="badge text-bg-info">React</span>
                                 </div>
-                                <h2>Steve Jobs</h2>
+                                <h4>Steve Jobs</h4>
                                 <p>
                                     Itaque ullam deleniti quia nam modi omnis explicabo nulla voluptatibus, autem nisi
                                     impedit?
@@ -215,15 +118,14 @@
                                     <span class="badge text-bg-warning">JavaScript</span>
                                     <span class="badge text-bg-info">React</span>
                                 </div>
-                                <h2 class="">Bill Gates</h2>
+                                <h4 class="">Bill Gates</h4>
                                 <p>
-                                    Aspernatur, repellat dolorem tempore in omnis id totam magnam. Perspiciatis
-                                    voluptates
-                                    eveniet
-                                    aut
-                                    impedit, distinctio accusamus modi ipsa quam aspernatur minus, nobis nihil incidunt
-                                    unde!
-                                    Incidunt
+                                    Itaque ullam deleniti quia nam modi omnis explicabo nulla voluptatibus, autem nisi
+                                    impedit?
+                                    Inventore a vel mollitia ut temporibus cumque, consequuntur blanditiis dicta maxime
+                                    quia
+                                    hic
+                                    aspernatur, ullam voluptas autem?
                                 </p>
                             </div>
                         </div>
@@ -236,14 +138,14 @@
                                     <span class="badge text-bg-secondary">Negocios</span>
                                     <span class="badge text-bg-danger">Startups</span>
                                 </div>
-                                <h2 class="">Ada Lovelace</h2>
+                                <h4 class="">Ada Lovelace</h4>
                                 <p>
-                                    Quia sequi illum vero? Facere quod odio magni perspiciatis ad illo totam beatae sint
-                                    atque,
-                                    velit
-                                    eius repellendus numquam sapiente laborum magnam et! Cumque illum, sunt modi ratione
-                                    dicta
-                                    harum?
+                                    Itaque ullam deleniti quia nam modi omnis explicabo nulla voluptatibus, autem nisi
+                                    impedit?
+                                    Inventore a vel mollitia ut temporibus cumque, consequuntur blanditiis dicta maxime
+                                    quia
+                                    hic
+                                    aspernatur, ullam voluptas autem?
                                 </p>
                             </div>
                         </div>
@@ -268,7 +170,7 @@
                     Ciudad de Buenos Aires o Ciudad Autónoma de Buenos Aires. También es llamada Capital Federal,
                     por ser la capital de Argentina.
                 </p>
-                <a href="" class="btn btn-outline-success text-white mb-5">CONOCE MÁS</a>
+                <a href="" class="btn-orador btn btn-outline-light mb-5">CONOCE MÁS</a>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.47497635568!2d-58.59811247428063!3d-34.61543034590001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1682359009024!5m2!1ses!2sar"
                     width="100%" height="45%" style="border:0;" allowfullscreen="" loading="lazy"
@@ -281,14 +183,14 @@
         <a name="seccion-inscripcion"></a>
         <div class="container shadow p-5 mb-5 text-center mt-5">
             <div>
-                <p class="text-center fs-2">CONVIÉRTETE EN UN ORADOR</p>
+                <p class=" p-form text-center fs-2">CONVIÉRTETE EN UN ORADOR</p>
                 <p class="text-center fs-5">Anótate como orador para dar una charla ignite. Cuentanos de qué quieres
                     hablar.</p>
             </div>
             <div>
                 <form>
                     <div class="row">
-                        <div class=" ">
+                        <div class="col">
                             <input type="text" class="form-control" placeholder="Nombre" name="email">
                         </div>
                         <div class="col">
@@ -297,14 +199,14 @@
                     </div>
                     <div class="col">
                         <label for="comment">Comentarios:</label>
-                        <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                        <textarea class="form-control" rows="5" id="comment" placeholder="Recuerda incluir un título para tu charla." name="text"></textarea>
                     </div>
                     <div class="form-check mb-3">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                            <input class="form-check-input" type="checkbox" name="remember"> Recuerdame
                         </label>
                     </div>
-                    <button type="submit" class="btn btn-outline-success">Enviar</button>
+                    <button type="submit" class="btn btn-comprar">Enviar</button>
                 </form>
             </div>
         </div>
@@ -312,7 +214,7 @@
 
     <footer class="bg-dark text-white">
         <div class="d-flex flex-column bg-dark bg-gradient">
-            <nav class="nav navbar-expand-lg bg-body-tertiary w-100 p-0">
+            <nav class="nav navbar-expand-lg bg-body-tertiary w-100 p-2">
                 <div class="container">
                     <ul class="nav justify-content-center">
                         <li class="nav-item ">

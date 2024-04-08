@@ -1,0 +1,20 @@
+.box__gray-outline {
+	background-color: none;
+    border: 2px solid #353a40;
+
+}
+
+.box__gray-outline:hover {
+	background-color: #ffc900;
+    border: 2px solid #ffc900;
+    cursor: default;
+    transition: all .4s;
+}
+
+.fs-7 {
+    font-size: .5rem;
+}
+
+#add-ticket:disabled {
+    background-color: #bebebe !important;
+}

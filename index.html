@@ -1,22 +1,32 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="./img/codoacodo.png" />
-    <!--Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap" rel="stylesheet" />
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
-    <!-- Mis estilos -->
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Conf Bs-As / Codo A Codo</title>
+
+    <!-- GLIDER CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.css" rel="stylesheet">
+
+    <!-- ANIMACION AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- ICONOS DE BOOSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <!-- CSS LOCAL -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tickets.css">
+
+    <title>Conf Bs As - Codo a Codo</title>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-scrollSpy" data-bs-smooth-scroll="true" tabindex="0">
@@ -24,7 +34,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="navbar-scrollSpy" data-bs-theme="dark">
             <div class="container">
                 <a class="navbar-brand" href="./index.html"><img src="./img/codoacodo.png" width="140" height="80"
-                        alt="Conf Bs As" /></a>
+                        alt="Conf Bs As"></a>
                 <a class="navbar-brand d-none d-sm-block" href="./index.html">Conf Bs As</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -34,229 +44,544 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav text-center">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#seccion-conferencia">La
-                                conferencia</a>
+                            <a class="nav-link active" aria-current="page" href="#conferencia">La conferencia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#seccion-oradores"><i class="bi bi-people-fill"></i> Los
-                                oradores</a>
+                            <a class="nav-link" href="#oradores"><i class="bi bi-people-fill"></i> Los oradores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#seccion-lugar"><i class="bi bi-geo-alt-fill"></i> Lugar y
-                                fecha</a>
+                            <a class="nav-link" href="#lugar"><i class="bi bi-geo-alt-fill"></i> Lugar y fecha</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#seccion-inscripcion"><i class="bi bi-person-fill-add"></i>
-                                Conviértete en
+                            <a class="nav-link" href="#inscripcion"><i class="bi bi-person-fill-add"></i> Conviértete en
                                 orador</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link buyTickets text-success btn btn-outline-success text-white fw-bold"
-                                href="./compra.html"><i class="bi bi-ticket-perforated"></i> Comprar tickets</a>
+                            <a class="nav-link buyTickets fw-bold" data-bs-toggle="modal"
+                                data-bs-target="#buyTickesModal"><i class="bi bi-ticket-perforated"></i> Comprar
+                                tickets</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="sectionConferencia" id="conferencia">
-            <a name="seccion-conferencia"></a>
+        <div class="section__conferencia" id="conferencia">
             <div class="container">
-                <div class="sectionConferenciaBox d-flex justify-content-center justify-content-md-end">
+                <div class="section__conferencia-caja d-flex justify-content-center justify-content-md-end">
                     <div
                         class="heroText d-flex align-items-center align-items-md-end flex-column justify-content-end align-self-end">
-                        <h1 class="fs-1 fw-bold">Conf Bs As</h1>
+                        <h1 class="fs-1 fw-bold">Conf Bs As </h1>
                         <p class="text-white text-center text-md-end pb-0">
-                            Bs As llega por primera vez a Argentina. Un evento para
-                            compartir con nuestra comunidad el conocimiento y experiencia de
-                            los expertos que están creando el futuro de Internet. Ven a
-                            conocer a miembros del evento, a otros estudiantes de Codo a
-                            codo y los oradores de primer nivel que tenemos para ti.
+                            Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el
+                            conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a
+                            conocer a miembros del evento, a otros estudiantes de Codo a codo y los oradores de primer
+                            nivel que tenemos para ti.
                             <span class="d-block fw-bold fs-5 p-1">¡Te esperamos!</span>
                         </p>
                         <div class="d-flex flex-column flex-lg-row">
-                            <a href="#" class="btn-orador btn btn-outline-light mb-3">QUIERO SER ORADOR</a>
-                            <a href="#" class="btn btn-comprar mb-3 mx-2">COMPRAR TICKETS</a>
+                            <a href="#inscripcionForm" class="btn btn-white mb-3">QUIERO SER ORADOR</a>
+                            <a href="#" class="btn btn-yellow mb-3 mx-2" data-bs-toggle="modal"
+                                data-bs-target="#buyTickesModal">COMPRAR TICKETS</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
     <main>
-        <section class="mb-5">
-            <a name="seccion-oradores"></a>
+        <section class="mb-5" id="oradores">
             <div class="container">
-                <h2 class="text-center">CONOCÉ A LOS ORADORES</h2>
-                <div class="row align-content-center g-4 py-5">
-                    <div class="col-sm-6 col-md-6 col-lg-4">
-                        <div class="card">
-                            <img class="card-img-top" src="./img/steve.jpg" alt="Card image" />
+                <div class="row justify-content-center">
+                    <div class="box-yellow mb-3">
+                        <h2 class="align-text-top">CONOCÉ A LOS ORADORES</h2>
+                    </div>
+                </div>
+                <div class="row align-content-center">
+                    <div class="col-md-4 mb-3">
+                        <div class="card card-yellow" data-aos="flip-left" data-aos-duration="1000">
+                            <div class="img-card-conteiner">
+                                <img src="./img/steve.jpg" class="card-img-top" alt="fotografia de Steve Jobs">
+                            </div>
                             <div class="card-body">
                                 <div class="mb-2">
                                     <span class="badge text-bg-warning">JavaScript</span>
                                     <span class="badge text-bg-info">React</span>
                                 </div>
-                                <h4>Steve Jobs</h4>
-                                <p>
-                                    Itaque ullam deleniti quia nam modi omnis explicabo nulla
-                                    voluptatibus, autem nisi impedit? Inventore a vel mollitia
-                                    ut temporibus cumque, consequuntur blanditiis dicta maxime
-                                    quia hic aspernatur, ullam voluptas autem?
-                                </p>
+                                <h5 class="card-title">Steve Jobs</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-4">
-                        <div class="card">
-                            <img class="card-img-top" src="./img/bill.jpg" alt="Card image" />
+                    <div class="col-md-4 mb-3">
+                        <div class="card card-yellow" data-aos="flip-left" data-aos-duration="1000">
+                            <div class="img-card-conteiner">
+                                <img src="./img/bill.jpg" class="card-img-top" alt="fografia de Bill Gates">
+                            </div>
                             <div class="card-body">
                                 <div class="mb-2">
                                     <span class="badge text-bg-warning">JavaScript</span>
                                     <span class="badge text-bg-info">React</span>
                                 </div>
-                                <h4 class="">Bill Gates</h4>
-                                <p>
-                                    Itaque ullam deleniti quia nam modi omnis explicabo nulla
-                                    voluptatibus, autem nisi impedit? Inventore a vel mollitia
-                                    ut temporibus cumque, consequuntur blanditiis dicta maxime
-                                    quia hic aspernatur, ullam voluptas autem?
-                                </p>
+                                <h5 class="card-title">Bill Gates</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-4">
-                        <div class="card">
-                            <img class="card-img-top" src="./img/ada.jpeg" alt="Card image" />
+                    <div class="col-md-4 mb-3">
+                        <div class="card card-yellow" data-aos="flip-left" data-aos-duration="1000">
+                            <div class="img-card-conteiner">
+                                <img src="./img/ada.jpeg" class="card-img-top" alt="fotografia Ada Lovelace">
+                            </div>
                             <div class="card-body">
                                 <div class="mb-2">
                                     <span class="badge text-bg-secondary">Negocios</span>
                                     <span class="badge text-bg-danger">Startups</span>
                                 </div>
-                                <h4 class="">Ada Lovelace</h4>
-                                <p>
-                                    Itaque ullam deleniti quia nam modi omnis explicabo nulla
-                                    voluptatibus, autem nisi impedit? Inventore a vel mollitia
-                                    ut temporibus cumque, consequuntur blanditiis dicta maxime
-                                    quia hic aspernatur, ullam voluptas autem?
-                                </p>
+                                <h5 class="card-title">Ada Lovelace</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="" id="lugar">
+            <div class="glider-contain">
+                <div class="glider">
+                    <div>
+                        <div class="card mb-3 bg-dark">
+                            <div class="row g-0">
+                                <div class="col-lg-6">
+                                    <img src="./img/ba_as.jpg" class="img-fluid"
+                                        alt="imagen de la ciudad de buenos aires">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <h3 class="text-white">
+                                                Bs As - Octubre
+                                            </h3>
+                                            <p class="text-white">
+                                                Buenos Aires es la capital y ciudad más poblada de la República
+                                                Argentina. Sus nombres oficiales son Ciudad de Buenos Aires o Ciudad
+                                                Autónoma de Buenos Aires (CABA). También es llamada Capital Federal, por
+                                                ser la sede del gobierno nacional.​
+                                            </p>
+                                            <a href="https://es.wikipedia.org/wiki/Buenos_Aires"
+                                                class="btn btn-white mb-5">CONOCE MÁS</a>
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.47497635568!2d-58.59811247428063!3d-34.61543034590001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1682359009024!5m2!1ses!2sar"
+                                                width="80%" height="45%" style="border:0;" allowfullscreen=""
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card mb-3 bg-dark">
+                            <div class="row g-0">
+                                <div class="col-lg-6">
+                                    <img src="./img/hawaii2.jpg" class="img-fluid"
+                                        alt="fotografia de una ciudad de hawaii">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <h3 class="text-white">
+                                                Hawaii
+                                            </h3>
+                                            <p class="text-white">
+                                                Hawái (en inglés: Hawaii; en hawaiano, Hawai‘i) es uno de los cincuenta
+                                                estados que, junto con Washington D. C., forman los Estados Unidos. Su
+                                                capital y ciudad más poblada es Honolulu, en la isla de Oʻahu.
+                                            </p>
+                                            <a href="https://es.wikipedia.org/wiki/Hawái"
+                                                class="btn btn-white mb-5">CONOCE MÁS</a>
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3828210.4091852363!2d-160.1481564696494!3d20.445192730660146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7bffdb064f79e005%3A0x4b7782d274cc8628!2zSGF3w6FpLCBFRS4gVVUu!5e0!3m2!1ses!2sar!4v1684167052662!5m2!1ses!2sar"
+                                                width="80%" height="45%" style="border:0;" allowfullscreen=""
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card mb-3 bg-dark">
+                            <div class="row g-0">
+                                <div class="col-lg-6">
+                                    <img src="./img/honolulu.jpg" class="img-fluid" alt="fotografia playa honolulu">
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card-body">
+                                        <div class="container">
+                                            <h3 class="text-white">
+                                                Honolulú​
+                                            </h3>
+                                            <p class="text-white">
+                                                Honolulu u Honolulú 2​ es la capital y localidad más grande del estado
+                                                de Hawái, en los Estados Unidos. Honolulu es la más sureña de entre las
+                                                principales ciudades estadounidenses.
+                                            </p>
+                                            <a href="https://es.wikipedia.org/wiki/Honolulu"
+                                                class="btn btn-white mb-5">CONOCE MÁS</a>
+                                            <iframe
+                                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237860.03822716817!2d-157.96389071742198!3d21.32827333828036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c00183b8cc3464d%3A0x4b28f55ff3a7976c!2sHonolulu%2C%20Haw%C3%A1i%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1684165817166!5m2!1ses!2sar"
+                                                width="100%" height="45%" style="border:0;" allowfullscreen=""
+                                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button aria-label="Previous" class="glider-prev"><i class="bi bi-caret-left-fill"></i></button>
+                <button aria-label="Next" class="glider-next"><i class="bi bi-caret-right-fill"></i></button>
+                <div role="tablist" class="dots"></div>
+            </div>
+        </section>
+
+        <section id="inscripcion">
+            <div class="container shadow p-5">
+                <div class="row justify-content-center mb-2">
+                    <div class="box-yellow mb-3">
+                        <h2 class="align-text-top">CONVIÉRTETE EN UN ORADOR</h2>
+                    </div>
+                    <p class="text-center">
+                        Anótate como orador para dar una charla ignite. ¡Cuéntanos de qué quieres hablar!
+                    </p>
+                </div>
+                <div>
+                    <form class="row justify-content-center text-center">
+                        <div class="col-md-4 mb-3">
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="inputNombre" placeholder="Nombre">
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="inputApellido" placeholder="Apellido">
+                            </div>
+                        </div>
+                        <div class="col-md-8 mb-3">
+                            <textarea class="form-control" id="textArea" rows="3"
+                                placeholder="¿Sobre qué quieres hablar?"></textarea>
+                            <div id="textAreaHelp" class="form-text mb-3">Recuerda incluir un título para tu charla.
+                            </div>
+
+                            <button type="button" class="btn btn-yellow-outline" id="oradorToastBtn">ENVIAR </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <section class="ubicacion">
-        <a name="seccion-lugar"></a>
-        <div class="row">
-            <div class="col-lg-6">
-                <img class="img-fluid h-100" src="./img/ba_as.jpg" alt="ciudad de buenos aires" />
-            </div>
-            <div class="col-lg-6 p-5 bg-dark bg-gradient">
-                <h3 class="text-white fs-3 fw-bold">Bs As - Octubre</h3>
-                <p class="text-white">
-                    Buenos Aires es la capital y ciudad más poblada de la República
-                    Argentina. Sus nombres oficiales son Ciudad de Buenos Aires o Ciudad
-                    Autónoma de Buenos Aires. También es llamada Capital Federal, por
-                    ser la capital de Argentina.
-                </p>
-                <a href="" class="btn-orador btn btn-outline-light mb-5">CONOCE MÁS</a>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.47497635568!2d-58.59811247428063!3d-34.61543034590001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1682359009024!5m2!1ses!2sar"
-                    width="100%" height="45%" style="border: 0" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+    <footer class="bg-dark pt-5">
+        <div class="container mb-5">
+            <ul class="d-flex flex-column align-items-center flex-lg-row">
+                <li>
+                    <a href="./404.html">Preguntas frecuentes</a>
+                </li>
+                <li>
+                    <a href="./404.html">Contáctanos</a>
+                </li>
+                <li>
+                    <a href="./404.html">Prensa</a>
+                </li>
+                <li>
+                    <a href="./404.html">Conferencia</a>
+                </li>
+                <li>
+                    <a href="./404.html">Términos y condiciones</a>
+                </li>
+                <li>
+                    <a href="./404.html">Privacidad</a>
+                </li>
+                <li>
+                    <a href="./404.html">Estudiantes</a>
+                </li>
+            </ul>
         </div>
-    </section>
-
-    <section class="seccion-formulario">
-        <a name="seccion-inscripcion"></a>
-        <div class="container shadow p-5 mb-5 text-center mt-5">
-            <div>
-                <p class="p-form text-center fs-2">CONVIÉRTETE EN UN ORADOR</p>
-                <p class="text-center fs-5">
-                    Anótate como orador para dar una charla ignite. Cuentanos de qué
-                    quieres hablar.
-                </p>
-            </div>
-            <div>
-                <form>
-                    <div class="row">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Nombre" name="email" />
-                        </div>
-                        <div class="col">
-                            <input type="password" class="form-control" placeholder="Email" name="pswd" />
-                        </div>
-                    </div>
-                    <div class="col">
-                        <label for="comment">Comentarios:</label>
-                        <textarea class="form-control" rows="5" id="comment"
-                            placeholder="Recuerda incluir un título para tu charla." name="text"></textarea>
-                    </div>
-                    <div class="form-check mb-3">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" name="remember" />
-                            Recuerdame
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-comprar">Enviar</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-dark text-white">
-        <div class="d-flex flex-column bg-dark bg-gradient">
-            <nav class="nav navbar-expand-lg bg-body-tertiary w-100 p-2">
-                <div class="container">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link text-white link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                href="#">Preguntas Frecuentes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                href="#">Contactanos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                href="#">Prensa</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                href="#">Conferencia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                href="#">Termino y Condiciones</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                href="#">Privacidad</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white link-warning link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-                                href="#">Estudiantes</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="copy d-flex justify-content-center">
-                <p>Todos los derechos reservados. &copy; MaxiZent 2023 &copy;</p>
-            </div>
+        <div class="text-white text-center bg-black py-2">
+            <span class="container opacity-50"> Proyecto creado por Cristian Robles &#169 cursando en Codo a
+                Codo.</span>
         </div>
     </footer>
 
-    <!-- Font awesome -->
-    <script src="https://kit.fontawesome.com/7a421ca7e9.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    <!-- BOTON GO TOP -->
+    <div class="go-top-container">
+        <div class="go-top-buttom">
+            <i class="bi bi-chevron-up"></i>
+        </div>
+    </div>
+
+    <!-- MODAL COMPRA ENTRADAS -->
+    <div class="modal fade" id="buyTickesModal" tabindex="-1" aria-labelledby="buyTickesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="buyTickesModalLabel"><i class="bi bi-ticket-perforated"></i> COMPRA
+                        DE TICKETS </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <h3 class="mb-3" id="msj-usuario"></h3>
+                    </div>
+                    <div class="container">
+                        <div class="d-sm-none">
+                            <div class="d-flex align-items-center bg-dark mb-2">
+                                <div class="bg-warning py-2 px-2">
+                                    <span class="fw-bold fs-1 d-block px-1">80%</span>
+                                    <span class="fw-bold fs-7 d-block">DE DESCUENTO</span>
+                                </div>
+                                <div class="text-white text-center w-100">
+                                    <h3 class="p-0 m-0">Estudiante</h3>
+                                    * Presentar documentación.
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center bg-dark mb-2">
+                                <div class="bg-warning py-2 px-2">
+                                    <span class="fw-bold fs-1 d-block px-1">50%</span>
+                                    <span class="fw-bold fs-7 d-block">DE DESCUENTO</span>
+                                </div>
+                                <div class="text-white text-center w-100">
+                                    <h3 class="p-0 m-0">Trainee</h3>
+                                    * Presentar documentación.
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center bg-dark mb-2">
+                                <div class="bg-warning py-2 px-2">
+                                    <span class="fw-bold fs-1 d-block px-1">15%</span>
+                                    <span class="fw-bold fs-7 d-block">DE DESCUENTO</span>
+                                </div>
+                                <div class="text-white text-center w-100">
+                                    <h3 class="p-0 m-0">Junior</h3>
+                                    * Presentar documentación.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row align-content-center d-none d-sm-inline-flex">
+                            <div class="col-sm-4 mb-3">
+                                <div class="card box__gray-outline text-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Estudiante</h5>
+                                        <p class="card-text">
+                                            Tienen un descuento
+                                            <span class="fw-bold fs-1 d-block">80%</span>
+                                            * Presentar documentación.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 mb-3">
+                                <div class="card box__gray-outline text-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Trainee</h5>
+                                        <p class="card-text">
+                                            Tienen un descuento
+                                            <span class="fw-bold fs-1 d-block">50%</span>
+                                            * Presentar documentación.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 mb-3">
+                                <div class="card box__gray-outline text-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Junior</h5>
+                                        <p class="card-text">
+                                            Tienen un descuento
+                                            <span class="fw-bold fs-1 d-block">15%</span>
+                                            * Presentar documentación.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mb-2">
+                            <div class="mb-3">
+                                <h2 class="text-center">VALOR DE TICKET GENERAL $200</h2>
+                            </div>
+                        </div>
+                        <div>
+                            <form class="" id="formulario">
+                                <div class="row justify-content-center text-center">
+                                    <div class="col-md-6 mb-1" id="grupo__nombre">
+                                        <div class="mb-1">
+                                            <input type="text" class="form-control" id="nombre" name="buy-name"
+                                                placeholder="Nombre" required>
+                                        </div>
+                                        <p class="mb-0 p-1 d-none msjError alert alert-danger">El Nombre no puede quedar
+                                            vacio y tiene que ser de 4 a 16 caracteres, no se admiten números o
+                                            simbolos.</p>
+                                    </div>
+                                    <div class="col-md-6 mb-1" id="grupo__apellido">
+                                        <div class="mb-1">
+                                            <input type="text" class="form-control" id="apellido" name="buy-lastname"
+                                                placeholder="Apellido" required>
+                                        </div>
+                                        <p class="mb-0 p-1 d-none msjError alert alert-danger">El Apellido no puede
+                                            quedar vacio y tiene que ser de 4 a 16 caracteres, no se admiten números o
+                                            simbolos.</p>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center text-center">
+                                    <div class="col mb-1" id="grupo__correo">
+                                        <input type="email" class="form-control mb-1" id="correo" name="buy-email"
+                                            placeholder="Email" required>
+                                        <p class="mb-0 p-1 d-none msjError alert alert-danger">El Correo no puede quedar
+                                            vacio, solo puede contener letras, numeros, puntos, guiones y guion bajo.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center text-center mb-3">
+
+                                    <div class="col-md-6 mb-1" id="grupo__amount">
+                                        <label for="buy-amount" class="form-label">Cantidad (10 tickets Max.)</label>
+                                        <div class="d-flex gap-2">
+                                            <button class="rounded-1 px-3 mb-1 text-bg-warning text-decoration-none"
+                                                id="add-ticket" disabled>+</button>
+
+                                            <input type="number" class="form-control mb-1" id="amount" min="0" max="10"
+                                                name="buy-amount" placeholder="Cantidad" onchange="" required>
+                                        </div>
+                                        <p class="mb-0 p-1 d-none msjError alert alert-danger">Debe ingresar una
+                                            cantidad valida para continuar.</p>
+                                    </div>
+
+                                    <div class="col-md-6 mb-1">
+                                        <div class="mb-1">
+                                            <label for="buy-category" class="form-label">Categoria</label>
+                                            <select class="form-select form-control" aria-label="" id="buy-category"
+                                                required>
+                                                <option value="General">General</option>
+                                                <option value="Estudiante">Estudiante</option>
+                                                <option value="Trainee">Trainee</option>
+                                                <option value="Junior">Junior</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center text-start mb-2">
+                                    <div class="col mb-1">
+                                        <div class="" id="total-box">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center flex-column-reverse flex-md-row gap-2 mb-3">
+                                    <!-- d-flex justify-content-center flex-column flex-sm-row gap-2 mb-3 -->
+
+                                    <button class="btn btn-yellow col-12 col-md-3" data-bs-target="#exampleModalToggle2"
+                                        data-bs-toggle="modal" id="btn-history">HISTORIAL</button>
+                                    <button class="btn btn-yellow col-12 col-md-3" type="reset"
+                                        id="btn-clear">BORRAR</button>
+
+                                    <button class="btn btn-yellow col-12 col-md-5" type="submit" id="btn-buy" disabled>
+                                        COMPRAR
+                                    </button>
+
+
+
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8 mb-1">
+                                        <p class="alert alert-danger text-center d-none p-3" id="msj__box-error">
+                                            ¡Antes de comprar debe completar los campos correctamente!
+                                        </p>
+                                        <div class="spinner-border text-warning d-none" id="spinner" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                        <p class="alert alert-success text-center d-none p-3" id="msj__box-valid">
+                                            ¡Compra exitosa!
+                                            <br>
+                                            Enviamos un correo con la información de sus entradas.
+                                        </p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL HISTORIAL -->
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Historial de Compras</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- <div class="row" id="historial-box"></div> -->
+                    <!--   -->
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Cliente</th>
+                                <th scope="col">Detalle</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="historial-box">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button class="btn btn-yellow w-50" data-bs-target="#buyTickesModal"
+                        data-bs-toggle="modal">Volver</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST ORADORES FORM -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="oradorToast" class="toast text-bg-warning" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <i class="bi bi-emoji-smile mx-1"></i> <strong class="me-auto">Gracias por Inscribirse!</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Enviaremos un correo con la información para su acreditación.
+            </div>
+        </div>
+    </div>
+
+    <!-- GLIDER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.8/glider.min.js"></script>
+
+    <!-- ANIMACION AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
-    <script src="./js/index.js"></script>
+
+    <!-- JS LOCAL -->
+    <script src="./js/main.js"></script>
+
+    <!-- COMPRAR DE TICKETS -->
+    <script src="./js/tickets.js"></script>
+
 </body>
 
 </html>
